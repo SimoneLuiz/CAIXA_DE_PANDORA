@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/script.js"></script>
+    <title>Pandora</title>
+  </head>
+
+  <body>
+    <div id="game-area">
+      <div id="game-menu">
+        <h1>O Mito De Pandora</h1>
+        <button id="menu-button" onclick="playGame()">JOGAR</button>
+      </div>
+      <div id="char-selector">
+        <div>
+          <h2>Selecione um Personagem</h2>
+        </div>
+        <div class="c-s-box">
+          <div id="bjorn" class="box" onclick="playPandora()">
+            <img src="./assets/Pandora.jpeg" />
+            <h3>Pandora</h3>
+            <p>
+              Pandora era a primeira mulher a pisar nos mundo dos mortais, sua beleza era 
+              estonteante e seus olhos refletiam esperança e amor, criada por Atenas e Hefesto
+              possuia muitos dons e um deles era a justiça. 
+            </p>
+          </div>
+          <div id="liv" class="box" onclick="playEpimeteu()">
+            <img src="./assets/Epimeteu.jpg" />
+            <h3>Epimeteu</h3>
+            <p>
+              Depois que Zeus ganhou a Guerra Titanomaquia, ele deu uma boa olhada na Terra e 
+              via somente Criaturas e Monstros.para povoar a Terra. Então Epimeteu criou os 
+              Animais e deu-lhes os atributos diferenciados.
+            </p>
+          </div>
+          <div id="sigrid" class="box" onclick="playZeus()">
+            <img src="./assets/zeus.jpeg" />
+            <h3>Zeus</h3>
+            <p>
+              senhor dos homens e supremo mandatário dos deuses que habitavam o monte Olimpo. 
+              A imagem de Zeus era representada por um homem forte, barbudo, de aspecto majestoso, 
+              com um raio na mão e uma águia a seu lado.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="game-flow">
+        <div class="chat">
+          <h2 id="game-flow-title"></h2>
+          <p id="game-flow-paragraph"></p>
+          <a onclick="location.href=this.href+charUrl">
+            <button>Começar o Jogo!</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
