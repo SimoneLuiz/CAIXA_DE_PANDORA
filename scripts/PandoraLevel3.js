@@ -1,4 +1,7 @@
 function level3() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://cdn.hipercultura.com/imagens/1511188370ic5a12e7928311c-og.jpg')";
+
   document.getElementById("game-button").innerText = "Responder";
   document.getElementById("game-button").onclick = () => {
     level3_2();
@@ -9,7 +12,7 @@ function level3() {
 }
 
 function level3_2() {
-  var answer = prompt("Qual foi o dom que Pandora consegiu guardar? Coragem\nEsperança");
+  var answer = prompt("Qual foi o dom que Pandora consegiu guardar? \nCoragem \nEsperança \nMedo");
 
   let atempts = 1;
 
@@ -17,7 +20,7 @@ function level3_2() {
     answer = prompt(
       `Tem certeza? Te darei mais ${
         3 - atempts
-      } chance(s).\n\n"Qual foi o dom que Pandora consegiu guardar? Coragem\nEsperança"`
+      } chance(s).\n\n"Qual foi o dom que Pandora consegiu guardar? \nCoragem \nEsperança \nMedo"`
     );
     atempts++;
   }
@@ -51,7 +54,7 @@ function level3_3() {
     "Mesmo que a gente erre sempre há possibilidade de nos redimir dos nossos erros.\n\nBjörn não pensou apenas em si ao esconder a morte de Sigrid, e por sido teve a chance de ser perdoado.\n\nObrigado por jogar!! Caso não tenha jogado as outras histórias, o botão abaixo te levará para a página inicial novamente.\n\n\nJogo Desenvolvido por Simone Luiz.";
   document.getElementById("game-button").innerText = "Voltar ao início";
   document.getElementById("game-button").onclick = () => {
-    location.href = "../styles/index.html"
+    location.href = "../index.html"
   };
 }
 

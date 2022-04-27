@@ -1,4 +1,9 @@
+
+
 function level2() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://cdn.hipercultura.com/imagens/1511188370ic5a12e7928311c-og.jpg')";
+
   document.getElementById("game-button").innerText = "Responder";
   document.getElementById("game-button").onclick = () => {
     level2_2();

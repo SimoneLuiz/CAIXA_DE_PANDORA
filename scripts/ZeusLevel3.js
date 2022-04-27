@@ -1,5 +1,9 @@
 function level3() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://aventurasnahistoria.uol.com.br/media/uploads/deuses_gregos.jpg')";
+
   document.getElementById("game-button").innerText = "Responder";
+  
   document.getElementById("game-button").onclick = () => {
     level3_2();
   };
@@ -11,7 +15,7 @@ Pandora curiosa com que teria dentro da Caixa, resolve abri-la! Quando a Caixa f
 
 function level3_2() {
   var answer = prompt(
-    "Qual foi o erro de Pandora? \nGullveig  \nFrygg \nCuriosidade"
+    "Qual foi o erro de Pandora? \nGula \nLuxuria \nCuriosidade"
   );
 
   let atempts = 1;
@@ -20,7 +24,7 @@ function level3_2() {
     answer = prompt(
       `Estamos quase no fim! Você tem ${
         3 - atempts
-      } chance(s).\n\n"Qual foi o erro de Pandora? \nGullveig  \nFrygg \nCuriosidade`
+      } chance(s).\n\n"Qual foi o erro de Pandora? \nGula \nLuxuria \nCuriosidade`
     );
     atempts++;
   }
@@ -33,7 +37,9 @@ function level3_2() {
     "A escuridão de Helheim te domina e você se torna mais uma das almas errantes.";
 
     document.getElementById("game-button").innerText = "Voltar ao início";
-    document.getElementById("game-button").onclick = () => {};
+    document.getElementById("game-button").onclick = () => {
+      location.href = "../index.html"
+    };
   } else {
     document.getElementById("game-flow-title").innerText =
       "Você acertou a última pergunta!";
@@ -53,7 +59,7 @@ function level3_3() {
     "Pandora curiosa com que teria dentro da Caixa, resolve abri-la! Quando a Caixa foi aberta, libera uma Névoa Negra com todas as maldades que Prometeu não avia dado aos Homens.Mas bem no fundo da Caixa estava a esperança, que fazia os Homens não desistir e seguir em frente.\n\nObrigado por jogar!! Caso não tenha jogado as outras histórias, o botão abaixo te levará para a página inicial novamente.\n\n\nJogo Desenvolvido por Simone Luiz.";
   document.getElementById("game-button").innerText = "Voltar ao início";
   document.getElementById("game-button").onclick = () => {
-    location.href = "../styles/index.html"
+    location.href = "../index.html"
   };
 }
 

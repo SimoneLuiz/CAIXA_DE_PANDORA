@@ -1,4 +1,7 @@
 function level3() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://p4.wallpaperbetter.com/wallpaper/541/102/497/banquet-of-the-gods-carlo-bellosio-greek-mythology-ancient-greek-classic-art-hd-wallpaper-thumb.jpg')";
+
   document.getElementById("game-button").innerText = "Responder";
   document.getElementById("game-button").onclick = () => {
     level3_2();
@@ -12,7 +15,7 @@ function level3() {
 
 function level3_2() {
   var answer = prompt(
-    "Qual dom restou? \nVidar  \nBaldur \nEsperança"
+    "Qual dom restou? \nPreguiça  \nForça \nEsperança"
   );
 
   let atempts = 1;
@@ -21,7 +24,7 @@ function level3_2() {
     answer = prompt(
       `Poxa! Não me decepcione assim, você tem ${
         3 - atempts
-      } chance(s).\n\nQual dom restou? \nVidar  \nBaldur \nEsperança`
+      } chance(s).\n\nQual dom restou? \nPreguiça  \nForça \nEsperança`
     );
     atempts++;
   }
@@ -33,7 +36,9 @@ function level3_2() {
     document.getElementById("game-flow-paragraph").innerText =
       "Atena tem terror de ter te criado";
     document.getElementById("game-button").innerText = "Voltar ao início";
-    document.getElementById("game-button").onclick = () => {};
+    document.getElementById("game-button").onclick = () => {
+      location.href = "../index.html"
+    };
   } else {
     document.getElementById("game-flow-title").innerText =
       "Você acertou a última pergunta!";
@@ -54,7 +59,7 @@ function level3_3() {
   "Pandora curiosa com que teria dentro da Caixa, resolve abri-la! Quando a Caixa foi aberta, libera uma Névoa Negra com todas as maldades que Prometeu não avia dado aos Homens.Mas bem no fundo da Caixa estava a esperança, que fazia os Homens não desistir e seguir em frente.\n\nObrigado por jogar!! Caso não tenha jogado as outras histórias, o botão abaixo te levará para a página inicial novamente.\n\n\nJogo Desenvolvido por Simone Luiz.";
   document.getElementById("game-button").innerText = "Voltar ao início";
   document.getElementById("game-button").onclick = () => {
-    location.href = "../styles/index.html"
+    location.href = "../index.html"
   };
 }
 

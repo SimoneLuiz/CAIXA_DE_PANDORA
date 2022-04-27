@@ -1,4 +1,9 @@
+
+
 function level1() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://aventurasnahistoria.uol.com.br/media/uploads/deuses_gregos.jpg')";
+  
   const startText = `Temendo a rivalidade entre os filhos, Cromos os “devorou” logo ao nascer, exceto Zeus, que Rea escondeu numa caverna no bosque de Creta, e colocou uma pedra em seu lugar para ser devorada. Entre outras lendas, Zeus teria sido criado por Melissa, que o alimentou com leite de cabra e mel.
   Quando se tornou adulto, Zeus derrotou o pai e obrigou-o a ressuscitar seus irmãos. Libertou também os ciclopes da tirania de Cromos, e eles em recompensa deram-lhe as armas do trovão e do relâmpago.
   Zeus tornou-se senhor dos homens e supremo mandatário dos deuses que habitavam o monte Olimpo. Tinha o poder dos fenômenos atmosféricos e com sua mão direita mandava chuva para as plantações..`;
@@ -39,7 +44,9 @@ function level1_3() {
     document.getElementById("game-flow-paragraph").innerText =
       "A escuridão  te domina e você se torna mais uma das almas errantes.";
     document.getElementById("game-button").innerText = "Voltar ao início";
-    document.getElementById("game-button").onclick = () => {};
+    document.getElementById("game-button").onclick = () => {
+      location.href = "../index.html"
+    };
   } else {
     document.getElementById("game-flow-title").innerText = "Você acertou!";
     document.getElementById("game-flow-paragraph").innerText =

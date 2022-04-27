@@ -1,6 +1,10 @@
-function level1() {
-  const startText = `"Antes disso, Prometeu recusou a jovem Pandora de Zeus temendo que ela fizesse parte de algum plano de vingança da divindade roubada. Ao aceitar Pandora, Epimeteu também ganhou uma caixa onde estavam contidos vários males físicos e espirituais que poderiam acometer o mundo. Desconhecedor do conteúdo, ele foi somente alertado de que aquela caixa não poderia ser aberta em nenhuma hipótese. Com isso, o artefato era mantido em segurança, no fundo de sua morada, cercado por duas gralhas barulhentas.".`;
 
+function level1() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://cdn.hipercultura.com/imagens/1511188370ic5a12e7928311c-og.jpg')";
+
+  const startText = `"Antes disso, Prometeu recusou a jovem Pandora de Zeus temendo que ela fizesse parte de algum plano de vingança da divindade roubada. Ao aceitar Pandora, Epimeteu também ganhou uma caixa onde estavam contidos vários males físicos e espirituais que poderiam acometer o mundo. Desconhecedor do conteúdo, ele foi somente alertado de que aquela caixa não poderia ser aberta em nenhuma hipótese. Com isso, o artefato era mantido em segurança, no fundo de sua morada, cercado por duas gralhas barulhentas.".`;
+  
   document.getElementById("game-flow-paragraph").innerText = startText;
 }
 

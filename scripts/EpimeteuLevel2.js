@@ -1,4 +1,7 @@
 function level2() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://p4.wallpaperbetter.com/wallpaper/541/102/497/banquet-of-the-gods-carlo-bellosio-greek-mythology-ancient-greek-classic-art-hd-wallpaper-thumb.jpg')";
+
   document.getElementById("game-button").innerText = "Responder";
   document.getElementById("game-button").onclick = () => {
     level2_2();
@@ -9,7 +12,7 @@ function level2() {
 }
 
 function level2_2() {
-  var answer = prompt("Quem alertou Epimeteu? \nOdin  \nVidar \nPrometeu");
+  var answer = prompt("Quem alertou Epimeteu? \nHéstia  \nHefesto \nPrometeu");
 
   let atempts = 1;
 
@@ -17,7 +20,7 @@ function level2_2() {
     answer = prompt(
       `Caramba você é ruim de memória, eu até já falei o nome dele para você, vou de tar mais ${
         3 - atempts
-      } chance(s).\n\nQual o nome do meu glorioso? \nOdin  \nVidar \nprometeu`
+      } chance(s).\n\nQuem alertou Epimeteu? \nHéstia  \nHefesto \nPrometeu`
     );
     atempts++;
   }
@@ -29,7 +32,9 @@ function level2_2() {
     document.getElementById("game-flow-paragraph").innerText =
     "A escuridão  te domina e você se torna mais uma das almas errantes.";
     document.getElementById("game-button").innerText = "Voltar ao início";
-    document.getElementById("game-button").onclick = () => {};
+    document.getElementById("game-button").onclick = () => {
+      location.href = "../index.html"
+    };
   } else {
     document.getElementById("game-flow-title").innerText =
       "Você acertou Novamente!";

@@ -1,6 +1,8 @@
 function level1() {
-  const startText = "Prometeu (aquele que vê antes) e seu irmão Epimeteu (aquele que vê depois) criaram os animais e os homens. Deram a cada animal um poder, como voar, caçar, coragem, garras, dentes afiados. O homem, criado por Prometeu a partir da argila, ficou sem nada por ser o último a ser feito. Prometeu deu um pouco de cada animal para o homem, mas faltava alguma coisa especial.Prometeu ensinou diversas coisas ao homem. Ensinou a domesticar animais, fazer remédios, construir barcos, escrever, cantar, interpretar sonhos e buscar riquezas minerais. Porém, enfureceu Zeus ao roubar o fogo dos deuses e dá-lo aos homens. Zeus decidiu, então, vingar-se de Prometeu e dos homens.";
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://p4.wallpaperbetter.com/wallpaper/541/102/497/banquet-of-the-gods-carlo-bellosio-greek-mythology-ancient-greek-classic-art-hd-wallpaper-thumb.jpg')";
 
+  const startText = "Prometeu (aquele que vê antes) e seu irmão Epimeteu (aquele que vê depois) criaram os animais e os homens. Deram a cada animal um poder, como voar, caçar, coragem, garras, dentes afiados. O homem, criado por Prometeu a partir da argila, ficou sem nada por ser o último a ser feito. Prometeu deu um pouco de cada animal para o homem, mas faltava alguma coisa especial.Prometeu ensinou diversas coisas ao homem. Ensinou a domesticar animais, fazer remédios, construir barcos, escrever, cantar, interpretar sonhos e buscar riquezas minerais. Porém, enfureceu Zeus ao roubar o fogo dos deuses e dá-lo aos homens. Zeus decidiu, então, vingar-se de Prometeu e dos homens.";
   document.getElementById("game-flow-paragraph").innerText = startText;
 }
 
@@ -37,7 +39,9 @@ function level1_3() {
     document.getElementById("game-flow-paragraph").innerText =
       "A escuridão  te domina e você se torna mais uma das almas errantes.";
     document.getElementById("game-button").innerText = "Voltar ao início";
-    document.getElementById("game-button").onclick = () => {};
+    document.getElementById("game-button").onclick = () => {
+      location.href = "../index.html"
+    };
   } else {
     document.getElementById("game-flow-title").innerText = "Você acertou!";
     document.getElementById("game-flow-paragraph").innerText =

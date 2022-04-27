@@ -1,4 +1,7 @@
 function level2() {
+  document.getElementById("game-flow").style.backgroundImage =
+  "url('https://aventurasnahistoria.uol.com.br/media/uploads/deuses_gregos.jpg')";
+
   document.getElementById("game-button").innerText = "Responder";
   document.getElementById("game-button").onclick = () => {
     level2_2();
@@ -10,7 +13,7 @@ function level2() {
 
 function level2_2() {
   var answer = prompt(
-    "O que Zeus pediu para Hefesto criar? \nAesir e Vanir \nAesir e Vidir \nPandora "
+    "O que Zeus pediu para Hefesto criar? \nPedra \nMachado \nPandora "
   );
 
   let atempts = 1;
@@ -19,7 +22,7 @@ function level2_2() {
     answer = prompt(
       `Creio que pode ser melhor do que isso, mais ${
         3 - atempts
-      } chance(s).\n\nO que Zeus pediu para Hefesto criar? \nAesir e Vanir \nAesir e Vidir \nPandora`
+      } chance(s).\n\nO que Zeus pediu para Hefesto criar? \nPedra \nMachado \nPandora`
     );
     atempts++;
   }
