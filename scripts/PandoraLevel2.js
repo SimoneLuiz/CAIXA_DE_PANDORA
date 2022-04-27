@@ -41,7 +41,7 @@ function level2_2() {
       "Os caminhos em frente são sempre escuros, a gente nunca sabe o que vai encontrar, mas na maioria das vezes os caminhos da glória sãos os mais difíceis - .";
     document.getElementById("game-button").innerText = "Próximo Nível";
     document.getElementById("game-button").onclick = () => {
-      location.href = "../pages/PandoraLevel3.html";
+      location.href = "../pages/pandoraLevel3.html";
     };
   }
 }
