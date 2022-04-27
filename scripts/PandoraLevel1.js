@@ -45,7 +45,7 @@ function level1_3() {
       "Pandora continua conversando com os deuses até encontrar Atena que foi uma das suas criadoras, Atena fala para pandora que nada do que está destinando pode ser mudado. Pandora enfrenta Atena e dúvida da sua capacidade de justiça para as pessoas. Hemera novamente aparece para encontrar pandora e convece Pandora novamente de abrir a caixa, e descobrir o que tem dentro,Pandora reluta mais volta para conversar com Epimeteu que agora era seu marido.";
     document.getElementById("game-button").innerText = "Próximo Nível";
     document.getElementById("game-button").onclick = () => {
-      location.href = "../pages/PandoraLevel2.html";
+      location.href = "../pages/pandoraLevel2.html";
     };
   }
 }

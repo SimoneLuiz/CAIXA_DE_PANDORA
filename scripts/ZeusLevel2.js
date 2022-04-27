@@ -39,7 +39,7 @@ function level2_2() {
     "Você herdou a inteligência de Atena.";
     document.getElementById("game-button").innerText = "Próximo Nível";
     document.getElementById("game-button").onclick = () => {
-      location.href = "../pages/ZeusLevel3.html";
+      location.href = "../pages/zeusLevel3.html";
     };
   }
 }

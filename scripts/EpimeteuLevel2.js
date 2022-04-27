@@ -37,7 +37,7 @@ function level2_2() {
     "Você realmente inteligente , Atena tem orgulo de ter te dado o sorpo da vida.";
     document.getElementById("game-button").innerText = "Próximo Nível";
     document.getElementById("game-button").onclick = () => {
-      location.href = "../pages/EpimeteuLevel3.html";
+      location.href = "../pages/epimeteuLevel3.html";
     };
   }
 }
